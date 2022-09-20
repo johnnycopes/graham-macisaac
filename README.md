@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-
+<head>
+<style>
+body {
+    max-width: 400px;
+    margin-left: 80px;
+    padding: 80px;
+    margin-right: 80px
+} 
+</style>
+</head>
 <body>
 <body style="margin:0;padding:20%">
 <div>
