@@ -1,9 +1,18 @@
 ---
 layout: default
 ---
-
+<head>
+	<style>
+	body {
+    		max-width: 400px;
+   		margin-left: 80px;
+   		padding: 80px;
+    		margin-right: 80px
+	} 	
+	</style>
+</head>
 <body>
-	<h1> Graham Smith </h1>
+	<h1> T1 Graham Smith </h1>
 	<h2> Data-Driven UX Researcher </h2>
 	<br>
 <p>
