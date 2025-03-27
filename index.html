@@ -1,62 +1,102 @@
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<style>
-	body {
-    	width: 90%;
-   		margin-right:  5%;
- 			margin-left:  5%;
-    	margin-top: 20px;
-			font-family: Open Sans;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #F0E7D5;
-			background-color: #262626;	
-	}
-	
-	@media (min-width: 600px) {
-  body {
-    width: 580px;
- 		margin-right:  0px;
- 		margin-left:  20px;
- 		margin-top: 20px;
-  }
-}
-
-	h2 {
-			margin-top:  8px;
-			font-size:  24px;
-	}
-	h1 {
-			font-size:  42px;
-			color:  #E8E8E8;
-			margin-bottom:  8px;
-	}
-	x3{
-			color:  #E8E8E8;
-	} 	
-	a[href]{
-			color:  #FFEB9B;
-	}
-	email {
-			color:  #CC7722;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graham M. Smith</title>
+    <style>
+        :root {
+            font-size: 10px;
+        }
+        body {
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            background-color: #F5D7CC;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 40%;
+			min-width: 50px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px 20px;
+			max-width: 40%;
+			font-size: 1.2rem;
+        }
+        nav .right .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .hero .text {
+            flex: 1;
+        }
+        .hero .text h1 {
+            font-size: 3rem;
+            color: #000;
+            margin: 0;
+        }
+        .hero .text .highlight-orange {
+            color: orange;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .content p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .content a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<p>
-Hey there. I'm <x3>Graham MacIsaac Smith</x3>, a <x3>Mixed Methods UX Researcher</x3> and general data person based in NYC. Among many other things, I'm passionate about methodology, product design and system-based solutions. Currently working at Charter Communications (aka Spectrum) on internal tools.<br>
-<br>
-I've spent most of my career at internal agency's, and become an expert in end-to-end research. I've handled every kind of project under the sun for every type of stakeholder. Contact me for UX case studies. I take NDA's seriously!<br>
-<br>
-I list some of the more interesting analytics projects below, but you can see all my public code on <a href="https://github.com/Graham-MacIsaac">Github</a>. I do some <a href="https://dribbble.com/GrayMac">graphic design</a>, some <a href="https://thedecisionlab.com/insights/consumer-insights/how-behavioral-science-can-make-airports-less-miserable">writing</a> and am on <a href="https://www.linkedin.com/in/graham-m-smith/">Linkedin</a>. 
-<br>
-<ul>
-<li><a href='https://graham-macisaac.github.io/Transit-Tweets/'>Analyzing the Effectiveness of Tweets for a Public Transit Advocacy Nonprofit </a></li>	
-<li><a href='https://palautatan.github.io/project141b/'>Classifying White House Petitions</a></li>
-<li><a href='https://github.com/Graham-MacIsaac/Graham-Macisaac.github.io/blob/master/Undergrad%20Data%20Science%20Projects/US%20Legislature%20NLP.pdf'>A Linguistic Analysis of Partisanship in US Legislators</a></li>
-</ul><br>
-I helped found the <a href= 'https://www.facebook.com/iidatascience'>first student run data science convention</a> in the United States, and have an unhealthy enthusiasm for trains.<br> 
-<br>
-Contact me at <email>Graham.macisaac09@gmail.com</email>
-<br>
+    <nav>
+        <div class="nav">Graham M. Smith
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#personal">Personal</a>
+            <a href="#resume">Resume</a>
+        </div>
+            <div class="icons">
+                <img src="linkedin.png" alt="LinkedIn">
+                <img src="github.png" alt="GitHub">
+                <img src="email.png" alt="Email">
+                <img src="writing.png" alt="Writing">
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <div class="text">
+                <p>Hey there,</p>
+                <h1>Graham MacIsaac Smith</h1>
+                <p><span class="highlight-orange">Mixed Methods UX Researcher</span> and general data person</p>
+            </div>
+            <img src="headshot.png" alt="Headshot">
+        </div>
+        <div class="content">
+            <p>I have 4+ years of experience with quant/qual analysis and am passionate about research methodology and system-based solutions. Based in NYC.</p>
+            <p>I've spent most of my career at internal agencies, and become an expert in efficient end-to-end research on unfamiliar and technical enterprise products. There’s some examples of my work on this page, but please contact me for (redacted) UX case studies.</p>
+            <p>You can see all my public code on <a href="https://github.com/Graham-MacIsaac">Github</a>. I also do a little <a href="https://dribbble.com/GrayMac">design</a>, some <a href="https://thedecisionlab.com/insights/consumer-insights/how-behavioral-science-can-make-airports-less-miserable">writing</a> and am of course on <a href="https://www.linkedin.com/in/graham-m-smith/">Linkedin</a>.</p>
+			<p> next line</p>
+		</div>
+    </div>
+</body>
