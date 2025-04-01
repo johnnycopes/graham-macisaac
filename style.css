@@ -26,13 +26,9 @@
 }
 body {
     font-size: 1.2rem;
-    font-family: Arial, sans-serif;
     background-color: var(--tan);
-    margin: 0;
-    padding: 0;
-    color: #333;
+    color: var(--black);
 }
-/* Navbar Styling */
 .navbar {
     display: flex; /* Flexbox for layout */
     width: 90%;
@@ -49,7 +45,6 @@ body {
 .navbar-left {
     position: fixed;
     display: flex; /* Use Flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
 }
 .navbar-right {
@@ -68,7 +63,7 @@ body {
     transition: color 0.3s ease; /* Add hover effect */
 }
 .navbar-right a:hover {
-    color: var(--red); /* Change color on hover */
+    color: var(--orange); /* Change color on hover */
 }
 .hero {
     display: flex;
@@ -86,12 +81,21 @@ body {
     color: orange;
 }
 .hero img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-left: 20px;
 }
 .content p {
     margin: 20px;
     line-height: 1.6;
+}
+.company_logos {
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 160px;
 }
