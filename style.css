@@ -5,12 +5,20 @@
     --white: #FFF;
     --green: #13402F;
     --orange: #FF5C27;
+    --burgundy_dark: #3F0013;
+    --burgundy_light: #6E3D4A;
+    --sky_blue_dark: #8f97ad;
+    --sky_blue_medium: #9da0ac;
+    --sky_blue_light: #D3D1D9;
+    --green_dark: #5F5420;
+    --green_medium: #867C54;
+    --green_light: #ADA286;
     --main: "Hedvig Letters Serif", serif;
     --heading: "Hedvig Letters", serif;
     --mono: "DM Mono", monospace;
     --reg: "DM Sans", sans-serif;
     --italic: "Hedvig Letters", serif;
-    --base-size: 1rem;
+    --base-size: 0.8rem;
     --scale: 1.3;
     --small: calc(var(--basesize) / var(--scale));
     --h1: calc(var(--h2) * var(--scale));
@@ -19,9 +27,10 @@
     --h4: calc(var(--h5) * var(--scale));
     --h5: calc(var(--h6) * var(--scale));
     --h6: var(--base-size);
+    --p: var(--base-size);
 }
 *{
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
 }
 body {
@@ -67,14 +76,12 @@ body {
 }
 .hero {
     display: flex;
-    align-items: center;
     margin-top: 200px;
     margin-bottom: 200px;
+    justify-content: space-between;
 }
 .hero .text h1 {
     font-size: 3rem;
-    color: #000;
-    margin: 0;
 }
 .hero .text .highlight-orange {
     font-size: 3rem;
@@ -84,7 +91,6 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: 20px;
 }
 .content p {
     margin: 20px;
@@ -99,3 +105,101 @@ body {
     margin-top: 80px;
     margin-bottom: 160px;
 }
+.proj_1st_row {
+    display: flex;
+    align-items: stretch;     
+    color: var(--white);
+  }
+.proj_1st_row .left-cell {
+    padding: 10px;
+    justify-content: flex-start; /* Align content to the left */
+    background-color: var(--burgundy_dark);
+    align-items: left; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+.proj_1st_row .middle-cell {
+    display: flex;
+    padding: 10px;
+    background-color: var(--burgundy_light);
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+    box-sizing: border-box;
+}
+.proj_2nd_row {
+    display: flex;
+    align-items: stretch; 
+    background-color: var(--sky_blue_dark);    
+    color: var(--white);
+  }
+.proj_2nd_row .left-cell {
+    padding: 10px;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: left; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+.proj_2nd_row .middle-cell {
+    display: flex;
+    padding: 10px;
+    background-color: var(--sky_blue_medium);
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+.proj_2nd_row .right-cell {
+    display: flex;
+    padding: 10px;
+    background-color: var(--sky_blue_light);
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+.proj_3rd_row {
+    display: flex;
+    align-items: stretch; 
+    color: var(--white);
+    background-color: var(--green_dark);
+    margin-bottom: 100px;
+  }
+.proj_3rd_row .left-cell {
+    padding: 10px;
+}
+.proj_3rd_row .middle-cell {
+    display: flex;
+    padding: 10px;
+    background-color: var(--green_medium);
+    justify-content: flex-start; /* Align content to the left */
+    align-items: left; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+.proj_3rd_row .right-cell {
+    display: flex;
+    padding: 10px;
+    background-color: var(--green_light);
+    justify-content: flex-start; /* Align content to the left */
+    align-items: left; /* Center vertically */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.personal_section {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal_section img {
+    width: 350px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.bottom_text {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50%;
+}
+
