@@ -29,15 +29,18 @@
     --h6: var(--base-size);
     --p: var(--base-size);
 }
+
 *{
     max-width: 700px;
     margin: 0 auto;
 }
+
 body {
     font-size: 1.2rem;
     background-color: var(--tan);
     color: var(--black);
 }
+
 .navbar {
     display: flex; /* Flexbox for layout */
     width: 90%;
@@ -47,6 +50,7 @@ body {
     top: 0; /* Stick to the top of the viewport */
     z-index: 1000; /* Ensure it stays on top */ 
 }
+
 .navbar img {
     height: 20px;
     width: 20px;
@@ -81,6 +85,29 @@ body {
     justify-content: flex-start;
     gap: 20px;
 }
+
+.hero {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Add this media query for mobile devices */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Switch to column layout */
+        align-items: center; /* Center items horizontally */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .hero img {
+        margin-top: 20px;
+        margin-left: 0; /* Reset margin to avoid alignment issues */
+    }
+}
+
 .hero .text{
     text-align: left;
     margin: 0; /* Reset any margin */
@@ -98,6 +125,7 @@ body {
 .content p {
     margin: 20px;
     line-height: 1.6;
+    margin-bottom: 80px
 }
 .company_logos {
     display: flex;
@@ -105,9 +133,17 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 80px;
     margin-bottom: 160px;
 }
+
+@media (max-width: 768px) {
+    .company_logos {
+        flex-direction: column; /* Switch to column layout */
+        align-items: center; /* Center items horizontally */
+        gap: 30px; /* Adjust spacing for smaller screens */
+    }
+}
+
 .proj_1st_row {
     display: flex;
     align-items: stretch;     
@@ -192,13 +228,45 @@ body {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .personal_section {
+        flex-direction: column; /* Switch to column layout */
+        align-items: center; /* Center items horizontally */
+        gap: 30px; /* Adjust spacing for smaller screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .personal_section .text {
+    text-align: left;
+    margin: 20px; /* Reset any margin */
+    }
+}
+
 .personal_section img {
     width: 350px;
     height: 300px;
     margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+    .personal_section img {
+        width: 350px;
+        height: 300px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .personal_section img {
+       
+    }
+}
+
 .bottom_text {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-bottom: 25px;
 }
