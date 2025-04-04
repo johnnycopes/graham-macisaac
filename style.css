@@ -78,19 +78,22 @@ body {
     display: flex;
     margin-top: 200px;
     margin-bottom: 200px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
 }
-.hero .text h1 {
-    font-size: 3rem;
+.hero .text{
+    text-align: left;
+    margin: 0; /* Reset any margin */
+    padding: 0; /* Reset any padding */
 }
 .hero .text .highlight-orange {
-    font-size: 3rem;
     color: orange;
 }
 .hero img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-left: auto;
 }
 .content p {
     margin: 20px;
@@ -184,7 +187,7 @@ body {
 .personal_section {
     display: flex;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -196,10 +199,7 @@ body {
 }
 
 .bottom_text {
-    display: flex;
-    align-items: stretch;
     text-align: center;
-    justify-content: center;
-    margin-left: 50%;
+    margin-bottom: 25px;
 }
 
