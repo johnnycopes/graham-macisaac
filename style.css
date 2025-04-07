@@ -1,6 +1,6 @@
 
 :root {
-    --tan: #F5D7CC;
+    --tan: #f6e2db;
     --black: #2A2929;
     --white: #FFF;
     --green: #13402F;
@@ -33,6 +33,10 @@
 *{
     max-width: 700px;
     margin: 0 auto;
+}
+
+a {
+    color: var(--orange);
 }
 
 html{
@@ -80,7 +84,7 @@ body {
     position: fixed;
     font-family: var(--reg);
     font-weight: 300;
-    right: 5%;
+    right: 3%;
     z-index: 1000; /* Keep it above other content */
     display: flex; /* Align links horizontally */
     gap: 1rem; /* Add spacing between links */
@@ -139,7 +143,6 @@ body {
     margin-left: auto;
 }
 .content p {
-    margin: 20px;
     line-height: 1.6;
     margin-bottom: 80px
 }
@@ -238,10 +241,9 @@ body {
 
 .personal_section {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 200px;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 @media (max-width: 768px) {
@@ -263,7 +265,6 @@ body {
 .personal_section img {
     width: 350px;
     height: 300px;
-    margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -284,6 +285,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 200px;
     margin-bottom: 25px;
 }
 
