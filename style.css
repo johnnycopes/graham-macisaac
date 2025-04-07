@@ -35,6 +35,10 @@
     margin: 0 auto;
 }
 
+html{
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
 body {
     font-size: 1.2rem;
     background-color: var(--tan);
