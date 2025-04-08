@@ -81,11 +81,6 @@ body {
     height: 20px;
     width: 20px;
 }
-.navbar-left {
-    position: fixed;
-    display: flex; /* Use Flexbox for layout */
-    align-items: flex-start; /* Align content to the left */
-}
 .navbar-right {
     position: fixed;
     font-weight: 300;
