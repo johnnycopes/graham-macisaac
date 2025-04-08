@@ -103,6 +103,10 @@ a {
   width: 20px;
 }
 
+.icon {
+  font-size: 16px;
+}
+
 .hero {
   display: flex;
   margin-top: 200px;
