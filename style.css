@@ -36,7 +36,6 @@
   }
 
 * {
-    margin: 0 auto;
     font-family: 'Nebula Sans', serif;
 }
 
@@ -50,6 +49,7 @@ html{
 
 body {
     max-width: 700px;
+    margin: 0 auto;
     font-size: 1.2rem;
     background-color: var(--tan);
     color: var(--black);
