@@ -55,7 +55,7 @@ body {
     color: var(--black);
 }
 
-.navbar {
+.header {
     display: flex; /* Flexbox for layout */
     width: 90%;
     margin: 30px auto;
@@ -66,7 +66,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    .header {
         display: flex; /* Flexbox for layout */
         width: 90%;
         margin: 10px auto;
@@ -81,7 +81,7 @@ body {
     height: 20px;
     width: 20px;
 }
-.navbar-right {
+.navbar {
     position: fixed;
     font-weight: 300;
     right: 3%;
@@ -89,13 +89,13 @@ body {
     display: flex; /* Align links horizontally */
     gap: 1rem; /* Add spacing between links */
 }
-.navbar-right a {
+.navbar a {
     text-decoration: none; /* Remove underline */
     color: #333; /* Link color */
     font-size: 1rem;
     transition: color 0.3s ease; /* Add hover effect */
 }
-.navbar-right a:hover {
+.navbar a:hover {
     color: var(--orange); /* Change color on hover */
 }
 .hero {
