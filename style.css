@@ -29,6 +29,19 @@
   --p: var(--base-size);
 }
 
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--tan);
+  color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -42,19 +55,6 @@ img {
 
 a {
   color: var(--orange);
-}
-
-html {
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
-
-body {
-  max-width: 700px;
-  margin: 0 auto;
-  font-family: Lato, sans-serif;
-  font-size: 1.2rem;
-  background-color: var(--tan);
-  color: var(--black);
 }
 
 .header {
@@ -142,9 +142,7 @@ body {
   margin: 0; /* Reset any margin */
   padding: 0; /* Reset any padding */
 }
-.hero .text .highlight-orange {
-  color: orange;
-}
+
 .hero img {
   width: 200px;
   height: 200px;
@@ -313,11 +311,6 @@ body {
     width: 350px;
     height: 300px;
     margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .personal_section img {
   }
 }
 
