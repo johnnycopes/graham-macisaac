@@ -302,7 +302,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .personal_section .text {
+  .text {
     text-align: left;
     margin: 20px; /* Reset any margin */
   }
