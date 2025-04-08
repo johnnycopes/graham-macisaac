@@ -171,6 +171,13 @@ a {
   }
 }
 
+.proj {
+  margin-bottom: 8px;
+}
+
+.proj h2 {
+  margin: 0 auto;
+}
 .proj_1st_row {
   display: flex;
   align-items: left;
