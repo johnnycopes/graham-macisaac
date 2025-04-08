@@ -39,6 +39,10 @@
     font-family: 'Nebula Sans', serif;
 }
 
+h1, h2, h3, h4, h5, h6, p, img {
+    margin: 0;
+}
+
 a {
     color: var(--orange);
 }
@@ -117,6 +121,10 @@ body {
     gap: 20px;
 }
 
+.img {
+    margin: 0 auto;
+}
+
 /* Add this media query for mobile devices */
 @media (max-width: 768px) {
     .hero {
@@ -150,6 +158,7 @@ body {
     margin-bottom: 80px
 }
 .company_logos {
+    margin: 0 auto;
     display: flex;
     max-width: fit-content;
     justify-content: center;
