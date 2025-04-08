@@ -1,23 +1,23 @@
 
 :root {
-    --tan: #f6e2db;
+    --tan: #f6eeeb;
     --black: #2A2929;
     --white: #FFF;
     --green: #13402F;
     --orange: #FF5C27;
     --burgundy_dark: #3F0013;
     --burgundy_light: #6E3D4A;
-    --sky_blue_dark: #8f97ad;
-    --sky_blue_medium: #9da0ac;
-    --sky_blue_light: #D3D1D9;
+    --sky_blue_dark: #464f68;
+    --sky_blue_medium: #707589;
+    --sky_blue_light: #b7b2c8;
     --green_dark: #5F5420;
     --green_medium: #867C54;
     --green_light: #ADA286;
-    --main: "Hedvig Letters Serif", serif;
-    --heading: "Hedvig Letters", serif;
-    --mono: "DM Mono", monospace;
-    --reg: "DM Sans", sans-serif;
-    --italic: "Hedvig Letters", serif;
+    --main: "Nebula Sans", serif;
+    --heading: "Nebula Sans", serif;
+    --mono: "Nebula Sans", serif;
+    --reg: "Nebula Sans", serif;
+    --italic: "Nebula Sans", serif;
     --base-size: 0.8rem;
     --scale: 1.3;
     --small: calc(var(--basesize) / var(--scale));
@@ -30,9 +30,15 @@
     --p: var(--base-size);
 }
 
+@font-face {
+    font-family: 'Nebula Sans';
+    src: url('/Users/graham/Documents/GitHub/Graham-Macisaac.github.io/Fonts/NebulaSans-1.010/WOFF2') format('woff2');
+  }
+
 *{
     max-width: 700px;
     margin: 0 auto;
+    font-family: 'Nebula Sans', serif;
 }
 
 a {
@@ -165,76 +171,109 @@ body {
 
 .proj_1st_row {
     display: flex;
-    align-items: stretch;     
-    color: var(--white);
+    align-items: left;     
+    color: var(--black);
+    font-size: var(--h5);
   }
 .proj_1st_row .left-cell {
-    padding: 10px;
+    padding: 15px;
     justify-content: flex-start; /* Align content to the left */
-    background-color: var(--burgundy_dark);
-    align-items: left; /* Center vertically */
+    border-color: var(--burgundy_light);
+    border-width: 4px;
+    border-style: solid;
+    align-items: flex-start; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
 }
 .proj_1st_row .middle-cell {
     display: flex;
-    padding: 10px;
-    background-color: var(--burgundy_light);
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Center vertically */
-    text-align: left; /* Ensure text is left-aligned */
+    flex-direction: column; /* Stack content vertically */
+    padding: 15px;
+    border-color: var(--burgundy_light);
+    border-width: 4px;
+    border-style: solid;
+    border-left-width: 0px;
+    justify-content: flex-start; /* Align content to the left horizontally */
+    align-items: flex-start; /* Align content to the top vertically */
+    text-align: left; /* Ensure text inside is left-aligned */
     box-sizing: border-box;
 }
 .proj_2nd_row {
     display: flex;
     align-items: stretch; 
-    background-color: var(--sky_blue_dark);    
-    color: var(--white);
+    color: var(--black);
+    font-size: var(--h5);
   }
 .proj_2nd_row .left-cell {
-    padding: 10px;
+    padding: 15px;
     justify-content: flex-start; /* Align content to the left */
     align-items: left; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
+    border-color: var(--sky_blue_medium);
+    border-width: 4px;
+    border-style: solid;
+    
 }
 .proj_2nd_row .middle-cell {
     display: flex;
-    padding: 10px;
-    background-color: var(--sky_blue_medium);
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Center vertically */
+    padding: 15px;
+    justify-content: center; /* Align content to the left */
+    flex-direction: column;
+    align-items: right; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
+    border-color: var(--sky_blue_medium);
+    border-width: 4px;
+    border-style: solid;
+    border-left-width: 0px; 
 }
 .proj_2nd_row .right-cell {
     display: flex;
-    padding: 10px;
-    background-color: var(--sky_blue_light);
-    justify-content: flex-start; /* Align content to the left */
+    flex-direction: column;
+    padding: 15px;
+    min-width: 10%;
+    justify-content: center; /* Align content to the left */
     align-items: center; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
+    border-color: var(--sky_blue_medium);
+    border-width: 4px;
+    border-style: solid;
+    border-left-width: 0px; 
 }
 .proj_3rd_row {
     display: flex;
     align-items: stretch; 
-    color: var(--white);
-    background-color: var(--green_dark);
+    color: var(--black);
     margin-bottom: 100px;
+    font-size: var(--h5);
   }
 .proj_3rd_row .left-cell {
-    padding: 10px;
+    padding: 15px;
+    border-color: var(--green_light);
+    border-width: 4px;
+    border-style: solid;
 }
 .proj_3rd_row .middle-cell {
     display: flex;
-    padding: 10px;
-    background-color: var(--green_medium);
-    justify-content: flex-start; /* Align content to the left */
+    flex-direction: column;
+    padding: 15px;
+    min-width: 15%;
+    border-color: var(--green_light);
+    border-width: 4px;
+    border-left-width: 0px; 
+    border-style: solid;
+    justify-content: center; /* Align content to the left */
     align-items: left; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
 }
 .proj_3rd_row .right-cell {
     display: flex;
-    padding: 10px;
-    background-color: var(--green_light);
-    justify-content: flex-start; /* Align content to the left */
+    flex-direction: column;
+    padding: 15px;
+    min-width: 15%;
+    border-color: var(--green_light);
+    border-width: 4px;
+    border-left-width: 0px; 
+    border-style: solid;
+    justify-content: center; /* Align content to the left */
     align-items: left; /* Center vertically */
     text-align: left; /* Ensure text is left-aligned */
 }
