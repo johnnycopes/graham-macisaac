@@ -56,34 +56,36 @@ body {
 }
 
 .header {
-    display: flex; /* Flexbox for layout */
-    width: 90%;
-    margin: 30px auto;
-    justify-content: space-between; /* Space between left and right sections */
-    align-items: center; /* Align items vertically */
-    top: 0; /* Stick to the top of the viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000; /* Ensure it stays on top */ 
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
     .header {
-        display: flex; /* Flexbox for layout */
-        width: 90%;
-        margin: 10px auto;
-        justify-content: space-between; /* Space between left and right sections */
-        align-items: center; /* Align items vertically */
-        top: 0; /* Stick to the top of the viewport */
-        z-index: 1000; /* Ensure it stays on top */ 
+        padding: 10px 0;
+        background: var(--tan);
     }
 }
 
 .navbar {
-    position: fixed;
-    font-weight: 300;
-    right: 3%;
-    z-index: 1000; /* Keep it above other content */
     display: flex; /* Align links horizontally */
+    justify-content: right;
+    font-weight: 300;
+    z-index: 1000; /* Keep it above other content */
+    width: 90%;
     gap: 1rem; /* Add spacing between links */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
 }
 .navbar a {
     text-decoration: none; /* Remove underline */
