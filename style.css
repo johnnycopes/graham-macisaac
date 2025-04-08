@@ -30,15 +30,6 @@
     --p: var(--base-size);
 }
 
-@font-face {
-    font-family: 'Nebula Sans';
-    src: url('/Users/graham/Documents/GitHub/Graham-Macisaac.github.io/Fonts/NebulaSans-1.010/WOFF2') format('woff2');
-  }
-
-* {
-    font-family: 'Nebula Sans', serif;
-}
-
 h1, h2, h3, h4, h5, h6, p, img {
     margin: 0;
 }
@@ -54,6 +45,7 @@ html{
 body {
     max-width: 700px;
     margin: 0 auto;
+    font-family: Lato, sans-serif;
     font-size: 1.2rem;
     background-color: var(--tan);
     color: var(--black);
